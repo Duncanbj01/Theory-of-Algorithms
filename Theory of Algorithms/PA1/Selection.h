@@ -19,7 +19,7 @@ private:
 
 		if (left == right)
 		{
-			return array[left];
+			return left;
 		}
 
 		int pivotIndex = Partition::generateRandomPivot(array, left, right);

@@ -38,15 +38,18 @@ private:
         }
         int n = (right - left + 1); 
 
-        int* Median = new int[k / 5]; 
+        //possible break point
+        int* Median = new int[n / 5.0]; 
 
         for (int i = left, r = 0; i <= right; i = i + 5)
         {
+            //possible break point
             int j = min(i + 4, right); 
             insertionSort(array, i, j); 
             Median[r++] = array[(i + j) / 2]; 
         }
 
+        //possible break point
         int mom = Median[select(Median, 0, (n / 5) - 1, (n / 5) / 2)]; 
 
         int momIndex = 0; 

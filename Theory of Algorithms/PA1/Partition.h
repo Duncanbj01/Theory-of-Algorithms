@@ -48,13 +48,13 @@ public:
 		{
 			if (array[i] < pivotValue)
 			{
-				swap(array, i, lowerPartitionIndex); 
+				swap(array, lowerPartitionIndex, i); 
 				i++; 
 				lowerPartitionIndex++; 
 			}
 			else if (array[i] > pivotValue)
 			{
-				swap(array, i, upperPartitionIndex); 
+				swap(array, upperPartitionIndex, i); 
 				upperPartitionIndex--; 
 			}
 			else
@@ -63,7 +63,9 @@ public:
 			}
 		}
 
-		int partitionIndexes[] = { lowerPartitionIndex, upperPartitionIndex }; 
+		int* partitionIndexes = new int[2]; 
+		partitionIndexes[0] = lowerPartitionIndex;
+		partitionIndexes[1] = upperPartitionIndex;
 		return partitionIndexes; 
     }
 };

@@ -211,7 +211,8 @@ void testInversions(int *array, int n) {
             << endl;
 }
 
-int main() {
+int main()
+{
     srand(clock());
     cout << "*** Sorting/Selection Test Without Duplicates ***\n" << endl;
     int sorting[] = { 19, 1, 12, 100, 7, 8, 4, -10, 14, -1, 97, -1009, 4210 };
@@ -235,4 +236,6 @@ int main() {
 
     cout << endl;
     testInversions(sorting, n);
+    string s; 
+    cin >> s; 
 }

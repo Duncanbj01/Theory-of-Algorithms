@@ -38,6 +38,8 @@ private:
 		{
 			return select(array, partitionIndexes[1] + 1, right, k); 
 		}
+
+		delete[] partitionIndexes; 
     }
 };
 

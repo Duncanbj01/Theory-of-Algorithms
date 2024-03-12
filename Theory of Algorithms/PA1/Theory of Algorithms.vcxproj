@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TestCorrectness.cpp" />
+    <ClCompile Include="TestTime.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClosestPairOfPoints.h" />

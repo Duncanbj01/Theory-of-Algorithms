@@ -40,7 +40,7 @@ void compareSorting() {
 	double mergeAvg = 0, quickMedianOf3Avg = 0, quickRandomAvg = 0,
 			radixRandomAvg = 0;
 	int numExec = 0;
-	for (int num = 500000; num <= 50000000; num *= 1.3) {
+	for (int num = 5000; num <= 50000000; num *= 1.3) {
 		int *array = new int[num];
 		int *temp = new int[num];
 		for (int i = 0; i < num; i++)
@@ -255,4 +255,7 @@ int main() {
 			<< "\n****************** Time Test Closest Pair of Points ******************\n"
 			<< endl;
 	testClosestPoints();
+	string s;
+	cin >> s;
+	return 0;
 }

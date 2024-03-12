@@ -28,7 +28,9 @@ private:
 			partitionIndex = Partition::partition(array, left, right, pivotIndex);
 			quicksortMedianOf3(array, left, partitionIndex[0] - 1); 
 			quicksortMedianOf3(array, partitionIndex[1] + 1, right); 
+			delete[] partitionIndex; 
 		}
+		
     }
 
     static void quicksortRandom(int array[], int left, int right) 
@@ -40,6 +42,7 @@ private:
 			partitionIndex = Partition::partition(array, left, right, pivotIndex); 
 			quicksortRandom(array, left, partitionIndex[0] - 1); 
 			quicksortRandom(array, partitionIndex[1] + 1, right); 
+			delete[] partitionIndex; 
 		}
     }
 };

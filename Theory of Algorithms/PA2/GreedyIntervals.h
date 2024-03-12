@@ -35,6 +35,7 @@ public:
 
     static vector<Interval> schedule(vector<Interval> &intervals) 
 	{ // complete this method
+
 		sortIntervalsByEndTime(intervals); 
 		vector<Interval> optimal; 
 		optimal.push_back(intervals[0]); 

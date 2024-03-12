@@ -51,4 +51,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="intervalColoring1.txt" />
+    <Text Include="intervalColoring2.txt" />
+    <Text Include="intervalColoring3.txt" />
+    <Text Include="intervalScheduling1.txt" />
+    <Text Include="intervalScheduling2.txt" />
+    <Text Include="intervalScheduling3.txt" />
+  </ItemGroup>
 </Project>

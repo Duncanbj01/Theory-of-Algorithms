@@ -238,4 +238,5 @@ int main()
     testInversions(sorting, n);
     string s; 
     cin >> s; 
+    return 0; 
 }

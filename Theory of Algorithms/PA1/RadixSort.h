@@ -75,12 +75,14 @@ private:
             e = e * n; 
         }
      
+        delete[] digits; 
 
     }
     
 public:
     
-    static void radixSort(int A[], int n) {
+    static void radixSort(int A[], int n) 
+    {
         // Separate positive and negative integers
         vector<int> positive, negative;
         for (int i = 0; i < n; i++) {
@@ -101,7 +103,7 @@ public:
         for (int i = negative.size() - 1; i >= 0; i--)
             A[j++] = -negative[i];
         for (int i = 0; i < positive.size(); i++)
-            A[j++] = positive[i];
+            A[j++] = positive[i]; 
     }
 };
 

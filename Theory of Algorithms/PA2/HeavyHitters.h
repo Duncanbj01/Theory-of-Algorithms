@@ -53,13 +53,15 @@ public:
             }
             else
             {
-                for (auto& pair : freqMap)
+                unordered_map<char, int>::iterator it = freqMap.begin();
+                while (it != freqMap.end())
                 {
-                    pair.second--; 
-                    if (pair.second == 0)
-                    {
-                        freqMap.erase(pair.first); 
-                    }
+                    it->second--; 
+                    
+                    if (0 == it->second)
+                        it = freqMap.erase(it);
+                    else
+                        ++it; 
                 }
             }
         }
